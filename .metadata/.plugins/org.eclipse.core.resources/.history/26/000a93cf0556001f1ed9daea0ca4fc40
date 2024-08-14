@@ -1,0 +1,67 @@
+package com.db.controller;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.db.model.Employee;
+import com.db.model.EmployeeRepository;
+
+@RestController
+public class DBController {
+
+	@Autowired
+	EmployeeRepository employeeRepository;
+
+	@PostMapping("/addData")
+	public String data(@RequestBody Integer employeeId) throws ParseException {
+		Employee employee = new Employee();
+		String dateString = "09/12/1995";
+		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+		SimpleDateFormat dobf = new SimpleDateFormat("dd/MM/yyyy");
+		Date dobDate = dobf.parse(dateString);
+		
+		employee.setDOB(dobDate);
+		employee.setEmpDesignation("AI Specialist");
+		employee.setEmpId(employeeId);
+		employee.setEmpJoiningDate(new Date());
+		employee.setEmpName("Harsh");
+		employeeRepository.save(employee);
+		
+		/*
+		 * Employee empData = employeeRepository.findById(employeeId).orElse(null); Date
+		 * empJoiningDateDB = empData.getEmpJoiningDate(); LocalDateTime now =
+		 * LocalDateTime.now(); DateTimeFormatter lFormatter =
+		 * DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"); String
+		 * formattedDateTime = now.format(lFormatter);
+		 * System.out.println("empJoiningDateDB :: " +empJoiningDateDB +
+		 * " & formattedDateTime :: " +formattedDateTime);
+		 */
+		
+		return "saved";
+
+	}
+	
+	@GetMapping("/getData")
+	public void getData(@RequestBody int employeeId) {
+		System.out.println("get Called");
+		Employee empData = employeeRepository.findById(employeeId).orElse(null);
+		Date empJoiningDateDB = empData.getEmpJoiningDate();
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter lFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
+		String formattedDateTime = now.format(lFormatter);
+		System.out.println("empJoiningDateDB :: " +empJoiningDateDB + " & formattedDateTime :: " +formattedDateTime);
+	
+	}
+
+}
