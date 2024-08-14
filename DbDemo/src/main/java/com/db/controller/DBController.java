@@ -28,6 +28,7 @@ public class DBController {
 	public String data(@RequestBody Integer employeeId) throws ParseException {
 		Employee employee = new Employee();
 		String dateString = "09/12/1995";
+		String IDOB="09/09/2000";
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		SimpleDateFormat dobf = new SimpleDateFormat("dd/MM/yyyy");
 		Date dobDate = dobf.parse(dateString);
