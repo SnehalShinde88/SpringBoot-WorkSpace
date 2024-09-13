@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\SpringBoot-WorkSpace\com.redis.example"/>
 			<item value="D:\SpringBoot-WorkSpace\DbDemo"/>
 		</list>
 		<list key="projectNameTemplate">

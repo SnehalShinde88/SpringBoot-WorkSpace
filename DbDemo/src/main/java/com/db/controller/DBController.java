@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.db.model.Employee;
 import com.db.model.EmployeeRepository;
+import com.db.model.UserDetails;
 
 @RestController
 public class DBController {
@@ -59,6 +60,17 @@ public class DBController {
 		long minutesDifference = ChronoUnit.MINUTES.between(startDateTime, endDateTime);
 		System.out.println("minutesDifference :: " + minutesDifference);
 
+	}
+	
+	@PostMapping("/addUser")
+	public String addUser(@RequestBody UserDetails userDetails) {
+		System.out.println("userDetails :: " +userDetails.getuId());
+		return userDetails.toString();
+	}
+	
+	@GetMapping("/docker")
+	public String getDocker() {
+		return "Welcome to Docker ! .. you have successfully deployed docker image..";
 	}
 
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/bcprov-jdk16-140.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/classes12.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/core-2.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/icu4j-62_1.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/javase-3.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/mail.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/qrgen-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/DesktopMaterial/CNDN_JARS/zxing.jar"/>
+	<classpathentry kind="lib" path="E:/UATProjects (1)/UATProjects (1)/Reminder_Utility/Jar files/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="E:/UATProjects (1)/UATProjects (1)/Reminder_Utility/Jar files/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Snehal/Downloads/mysql-connector-java-8.0.11-sources (1).jar"/>
+	<classpathentry kind="lib" path="D:/Users/Snehal/Downloads/mysql-connector-java-8.0.24/mysql-connector-java-8.0.24/mysql-connector-java-8.0.24.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/com.liferay.dynamic.data.mapping.io-3.0.42.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/dom4j-1.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
